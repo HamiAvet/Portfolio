@@ -1,0 +1,148 @@
+
+/* Parcours */
+.career-button button {
+    background: #5CC9FF;
+    box-shadow: 0 10px 24px #5CC9FF99,
+                inset 4px 4px 8px #caedff,
+                inset -3px -3px 8px #0073ac5c;
+    animation: levitatingButton_1 5s ease-in-out infinite;
+}
+
+/* Compétences */
+.skills-button button {
+    background: #FF4646;
+    box-shadow: 0 10px 24px #FF464699,
+                inset 4px 4px 8px #ffd2ee,
+                inset -3px -3px 8px #c3007c43;
+    animation: levitatingButton_2 5.5s ease-in-out infinite;
+}
+
+/* Projets */
+.projects-button button {
+    background: #CB5CFF;
+    box-shadow: 0 10px 24px #CB5CFF99,
+                inset 4px 4px 8px #f0d8ff,
+                inset -3px -3px 8px #7c00c342;
+    animation: levitatingButton_3 6s ease-in-out infinite;
+}
+
+/* Contact */
+.contact-button button {
+    background: #FFAA48;
+    box-shadow: 0 10px 24px #FFAA4899,
+                inset 4px 4px 8px #ffe9cd,
+                inset -3px -3px 8px #c774004a;
+    animation: levitatingButton_4 6.5s ease-in-out infinite;
+}
+
+.buttons a button {
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.buttons a:nth-child(1) button { animation-delay: 0s; }
+.buttons a:nth-child(2) button { animation-delay: 1s; }
+.buttons a:nth-child(3) button { animation-delay: 2s; }
+.buttons a:nth-child(4) button { animation-delay: 3s; }
+
+.buttons a:hover button {
+    transition: 0.5s;
+}
+
+.career-button button { 
+    background: #5CC9FF;
+}
+
+.skills-button button {
+    background: #FF4646;
+}
+
+.projects-button button {
+    background: #CB5CFF;
+}
+
+.contact-button button {
+    background: #FFAA48;
+}
+
+
+.career-button button:hover { 
+    background: #42b1e9;
+}
+
+.skills-button button:hover {
+    background: #ca3838;
+}
+
+.projects-button button:hover {
+    background: #a14ac9;
+}
+
+.contact-button button:hover {
+    background: #d18a3a;
+}
+
+
+/* Animation */
+@keyframes levitatingButtons {
+    0% {
+        transform: translate(0px, 0px);
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    25% {
+        transform: translate(4px, -4px);
+        box-shadow: 1px 3px 7px rgba(0,0,0,0.25);
+    }
+    50% {
+        transform: translate(0px, -5px);
+        box-shadow: 3px 4px 9px rgba(0,0,0,0.2);
+    }
+    75% {
+        transform: translate(-4px, -4px);
+        box-shadow: 2px 3px 7px rgba(0,0,0,0.25);
+    }
+    100% {
+        transform: translate(0px, 0px);
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+}
+
+@keyframes levitatingButton_1 {
+    0%   { transform: translate(0, 0); }
+    25%  { transform: translate(3px, -5px) }
+    50%  { transform: translate(-2px, -3px) }
+    75%  { transform: translate(2px, 3px) }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes levitatingButton_2 {
+    0%   { transform: translate(0, 0); }
+    25%  { transform: translate(-4px, 3px) }
+    50%  { transform: translate(2px, -5px) }
+    75%  { transform: translate(3px, 2px) }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes levitatingButton_3 {
+    0%   { transform: translate(0, 0); }
+    25%  { transform: translate(5px, -3px) }
+    50%  { transform: translate(-2px, -6px) }
+    75%  { transform: translate(-3px, 2px) }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes levitatingButton_4 {
+    0%   { transform: translate(0, 0); }
+    25%  { transform: translate(3px, -3px) }
+    50%  { transform: translate(-5px, -2px) }
+    75%  { transform: translate(2px, 4px) }
+    100% { transform: translate(0, 0); }
+}
