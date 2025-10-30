@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection</title>
+    <script>
+        // Fonction pour détecter la langue préférée du navigateur
+        function detectLanguage() {
+            let userLang = navigator.language || navigator.userLanguage;
+            userLang = userLang.toLowerCase().substring(0, 2); // Récupère les 2 premiers caractères (fr, en, etc.)
+            
+            // Redirection vers la version appropriée
+            if (userLang === 'fr') {
+                window.location.href = 'FR/index_fr.html';
+            } else {
+                // Par défaut, rediriger vers la version anglaise
+                window.location.href = 'EN/index_en.html';
+            }
+        }
+
+        // Exécuter la redirection au chargement de la page
+        window.onload = detectLanguage;
+    </script>
+</head>
+<body style="background: #FFF2E4;">
+</body>
+</html>
