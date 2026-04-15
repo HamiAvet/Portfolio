@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../Public/logo.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Styles/index.css">
+    <link rel="stylesheet" href="../../Styles/global.css">
+    <link rel="stylesheet" href="../../Styles/navbar.css">
+    <link rel="stylesheet" href="../../Styles/buttons.css">
+    <title>Qui je suis ?</title>
+</head>
+<body>
+    <nav>
+        <img class="menu" src="../../Public/small-icons/menu-line.png" alt="menu">
+        <div class="profile">
+            <h3>Hamlet AVETISYAN</h3>
+            <p>Développeur Wab</p>
+        </div>
+        <ul class="nav-links">
+            <li class="selected"><a href="./index.html">Qui je suis ?</a></li>
+            <li><a href="./career_fr.html">Mon Parcours</a></li>
+            <li><a href="./skils_fr.html">Mes Compétences</a></li>
+            <li><a href="./projects_fr.html">Mes Projets</a></li>
+            <li><a href="./contact_fr.html">Me Contacter</a></li>
+        </ul>
+        <div class="lang" >
+            <a href="./index_fr.html"><b>FR</b></a> / <a href="../EN/index_en.html">EN</a>
+        </div>
+    </nav>
+    <main>
+        <div class="main-container">
+        <div class="presentation-container">
+                <img src="../../Public/User.png" alt="My Photo">
+                <div class="presentation">
+                    <h1 class="title">Salutation</h1>
+                    <h2 class="subtitle">A propos de moi :</h2>
+                    <p class="text">Je suis Hamlet AVETISYAN, étudiant en BTS SIO option SLAM au lycée Marie Curie à Marseille. 
+                        Intéressé depuis plusieurs années par le développement web, je souhaite d’en faire mon métier. 
+                        Je suis actuellement à la recherche d’un stage afin d’approfondir mes compétences techniques 
+                        et de découvrir le fonctionnement du monde professionnel.</p>
+                    <a href="../../Public/CV Hamlet AVETISYAN Étudiant Développeur Web – BTS SIO option SLAM.pdf" class="download-cv"><p>Voir mon CV</p></a>
+                </div>
+            </div>
+            <div class="buttons-container">
+                <div class="social">
+                    <a href="https://x.com/AvetisyanHami"><img src="../../Public/small-icons/twitter-x-fill.png" alt="X (Twitter)"></a>
+                    <a href="https://fr.linkedin.com/in/hamlet-avetisyan-2a91bb384"><img src="../../Public/small-icons/linkedin-fill.png" alt="LinkedIn"></a>
+                    <a href=""><img src="../../Public/small-icons/facebook-fill.png" alt="Facebook"></a>
+                    <a href="https://github.com/HamiAvet"><img src="../../Public/small-icons/github-fill.png" alt="GitHub"></a>
+                </div>
+                <div class="buttons">
+                    <a href="./career_fr.html" class="career-button"><button>Mon Parcours</button></a>
+                    <a href="./skils_fr.html" class="skills-button"><button>Mes Compétences</button></a>
+                    <a href="./projects_fr.html" class="projects-button"><button>Mes Projets</button></a>
+                    <a href="./contact_fr.html" class="contact-button"><button>Me Contacter</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <p class="copyright">Copyright 2025 © Hamlet AVETISYAN</p>
+</body>
+    <script>
+            const menu = document.querySelector(".menu")
+            const navLinks = document.querySelector(".nav-links")
+            menu.addEventListener('click',()=>{
+                navLinks.classList.toggle('mobile-menu');
+                if(navLinks.classList.contains('mobile-menu')){
+                    menu.src = "../../Public/small-icons/close-large-line.png";
+                }else{
+                    menu.src = "../../Public/small-icons/menu-line.png";
+                }
+            })
+    </script>
+</html>
