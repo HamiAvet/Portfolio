@@ -110,12 +110,15 @@ body {
     text-align: center;
 }
 
-.dev-languages-skills .skill:nth-child(1) { top: 30px; left: 100px }
+.dev-languages-skills .skill:nth-child(1) { top: 30px; left: 120px }
 .dev-languages-skills .skill:nth-child(2) { top: 50px; left: 190px }
-.dev-languages-skills .skill:nth-child(3) { top: 110px; left: 20px }
-.dev-languages-skills .skill:nth-child(4) { top: 140px; left: 200px }
-.dev-languages-skills .skill:nth-child(5) { top: 200px; left: 70px }
+.dev-languages-skills .skill:nth-child(3) { top: 80px; left: 40px }
+.dev-languages-skills .skill:nth-child(4) { top: 120px; left: 200px }
+.dev-languages-skills .skill:nth-child(5) { top: 160px; left: 40px }
 .dev-languages-skills .skill:nth-child(6) { top: 220px; left: 150px }
+.dev-languages-skills .skill:nth-child(7) { top: 220px; left: 80px }
+.dev-languages-skills .skill:nth-child(8) { top: 140px; left: 130px }
+.dev-languages-skills .skill:nth-child(9) { top: 190px; left: 200px }
 
 
 .databases-skills {
@@ -132,9 +135,9 @@ body {
     text-align: center;
 }
 
-.databases-skills .skill:nth-child(1) { top: 25px; left: 50px }
-.databases-skills .skill:nth-child(2) { top: 90px; left: 80px }
-
+.databases-skills .skill:nth-child(1) { top: 80px; left: 20px }
+.databases-skills .skill:nth-child(2) { top: 100px; left: 70px }
+.databases-skills .skill:nth-child(3) { top: 20px; left: 70px }
 
 .frameworks-skills {
     position: relative;
@@ -191,13 +194,14 @@ body {
     text-align: center;
 }
 
-.tools-skills .skill:nth-child(1) { top: 40px; left: 60px }
+.tools-skills .skill:nth-child(1) { top: 35px; left: 90px }
 .tools-skills .skill:nth-child(2) { top: 40px; left: 180px }
 .tools-skills .skill:nth-child(3) { top: 110px; left: 120px }
-.tools-skills .skill:nth-child(4) { top: 150px; left: 190px }
-.tools-skills .skill:nth-child(5) { top: 140px; left: 50px }
-.tools-skills .skill:nth-child(6) { top: 200px; left: 130px }
-
+.tools-skills .skill:nth-child(4) { top: 130px; left: 190px }
+.tools-skills .skill:nth-child(5) { top: 110px; left: 30px }
+.tools-skills .skill:nth-child(6) { top: 190px; left: 150px }
+.tools-skills .skill:nth-child(7) { top: 180px; left: 60px }
+iii
 .software-skills {
     position: relative;
     width: 280px;
@@ -214,9 +218,10 @@ body {
 
 .software-skills .skill:nth-child(1) { top: 30px; left: 70px }
 .software-skills .skill:nth-child(2) { top: 130px; left: 30px }
-.software-skills .skill:nth-child(3) { top: 30px; left: 160px }
-.software-skills .skill:nth-child(4) { top: 120px; left: 180px }
-.software-skills .skill:nth-child(5) { top: 180px; left: 110px }
+.software-skills .skill:nth-child(3) { top: 95px; left: 100px }
+.software-skills .skill:nth-child(4) { top: 30px; left: 160px }
+.software-skills .skill:nth-child(5) { top: 120px; left: 180px }
+.software-skills .skill:nth-child(6) { top: 180px; left: 110px }
 
 .buttons {
     display: flex;
