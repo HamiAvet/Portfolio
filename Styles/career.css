@@ -183,7 +183,7 @@ body {
 
 .certif-images {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
