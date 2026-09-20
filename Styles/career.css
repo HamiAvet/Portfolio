@@ -1,4 +1,6 @@
-/* Global Styles */
+/* =========================================
+   GLOBAL
+========================================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,141 +15,10 @@ body {
 
 .main-header {
     text-align: center;
-    margin: 20px auto 20px auto;
-    max-width: 600px;
+    max-width: 650px;
+    margin: 30px auto 40px;
     animation-duration: 1.5s;
     animation-name: viewFromLeftToRight;
-}
-
-/* Le grand timeline pour le parcours scolaire */
-.academic-pathways {
-    width: 38%;
-    animation-name: viewFromLeftToRight;
-    animation-duration: 1.5s;
-}
-
-.academic-pathways .timeline {
-    margin: 0 auto;
-    max-width: 650px;
-    padding: 20px;
-    padding-bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 3px 8fr;
-}
-
-.academic-pathways .timeline-component {
-    margin: 0 20px 20px 20px;
-}
-
-.academic-pathways .timeline-component-bg {
-    padding: 3em 1.5em 0em 1.5em;
-}
-
-.academic-pathways .timeline-component-bg-bottom {
-    margin-bottom: 0;
-}
-
-.academic-pathways .timeline-date-right {
-    padding: 5px 10px 0 0;
-}
-
-.academic-pathways .timeline-middle {
-    position: relative;
-    background: #333;
-}
-
-.academic-pathways .timeline-point {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 25px;
-    background: #000;
-    border-radius: 50%;
-    border: 3px solid #000;
-}
-
-.academic-pathways .timeline-title {
-    font-size: 1.2em;
-    margin: 0;
-    font-weight: bold;
-}
-
-.academic-pathways .timeline-paragraph {
-    line-height: 1.8em;
-}
-
-.academic-pathways .timeline-point-bottom {
-    top: 118px;
-    bottom: 0;
-}
-
-/* Le petit timeline pour les cours en ligne */
-.online-courses {
-    width: 38%;
-    animation-name: viewFromRightToLeft;
-    animation-duration: 1.5s;
-}
-
-.online-courses .timeline {
-    margin: 0 auto;
-    max-width: 650px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 8fr 3px 1fr;
-}
-
-.online-courses .timeline-component {
-    margin: 0 20px 20px 20px;
-}
-
-.online-courses .timeline-component-bg {
-    padding: 2.2em 1.5em 0em 1.5em;
-}
-
-.online-courses .timeline-component-bg-bottom {
-    margin-bottom: 0;
-}
-
-.online-courses .timeline-date-right {
-    text-align: left;
-    padding: 5px 10px 0 0;
-}
-
-.online-courses .timeline-middle {
-    position: relative;
-    background: #333;
-}
-
-.online-courses .timeline-point {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 30px;
-    height: 25px;
-    background: #000;
-    border-radius: 50%;
-    border: 3px solid #000;
-}
-
-.online-courses .timeline-title {
-    text-align: right;
-    font-size: 1.2em;
-    line-height: 3em;
-    margin: 0;
-    font-weight: bold;
-}
-
-.online-courses .timeline-paragraph {
-    line-height: 1.8em;
-    text-align: right;
-}
-
-.online-courses .timeline-point-bottom {
-    top: 110px;
-    bottom: 0;
 }
 
 .main-container {
@@ -155,64 +26,386 @@ body {
     flex-direction: column;
     align-items: center;
     width: 90%;
+    max-width: 1450px;
     margin: 0 auto;
-    padding: 0 0 30px 0;
+    padding-bottom: 30px;
 }
 
 .career-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
+    gap: 25px;
+    align-items: stretch;
 }
 
-.online-courses .subtitle {
-    text-align: right;
+/* Ligne séparatrice */
+.line {
+    width: 80px;
+    height: 6px;
+    border-radius: 3px;
+    background: #F27D00;
+    margin: 10px 0 20px 0;
+}
+
+/* Position des cadres */
+.academic-pathways {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.experience {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.online-courses {
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .certifications {
-    width: 20%;
-    animation-name: viewFromRightToLeft;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 25px;
+    background: #FEF8F3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
     animation-duration: 1.5s;
+    animation-name: viewFromRightToLeft;
 }
 
-.certifications .subtitle {
-    text-align: center;
-    margin-bottom: 20px;
+.card-container h1 {
+    font-size: 1.6em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
 }
 
-.certif-images {
+.card {
+    margin-bottom: 18px;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card-date {
+    font-weight: bold;
+    color: #F27D00;
+}
+
+.card-title {
+    margin-bottom: 3px;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.card-text {
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.3;
+    color: #888;
+}
+
+/* =========================================
+   FORMATION
+========================================= */
+.academic-pathways {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.academic-pathways .cards-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+}
+
+.academic-pathways .card {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+.academic-pathways .card-date {
+    width: auto;
+    margin-top: 13px;
+    text-align: right;
+}
+
+.academic-pathways .card-content {
+    width: 100%;
+    padding: 14px 18px;
+    background: #FAF1EA;
+    border-radius: 10px;
+}
+
+/* =========================================
+   APPRENTISSAGE EN LIGNE
+========================================= */
+.online-courses {
+    display: flex;
+    flex-direction: column;
+}
+
+.online-courses .cards-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.online-courses .card {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 0;
+}
+
+.online-courses .card-date {
+    width: auto;
+    margin-top: 13px;
+    text-align: right;
+}
+
+.online-courses .card-content {
+    width: 100%;
+    padding: 14px 18px;
+    background: #FAF1EA;
+    border-radius: 10px;
+}
+
+/* =========================================
+   EXPÉRIENCE / MES STAGES
+========================================= */
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience .cards-body {
+    width: 100%;
+}
+
+.experience .card {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    align-items: start;
     gap: 20px;
 }
 
-.certif-images img {
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    border-radius: 10px;
-    width: 120px;
+.experience .card-header {
+    width: auto;
+    margin-top: 12px;
 }
 
+.experience .card-date {
+    display: block;
+    font-weight: bold;
+    color: #F27D00;
+}
+
+.experience .card-duration {
+    margin-top: 3px;
+    font-size: 0.85em;
+    color: #888;
+}
+
+.experience .card-content {
+    width: 100%;
+    padding: 14px 18px;
+    background: #FAF1EA;
+    border-radius: 10px;
+}
+
+.experience .card-title span {
+    font-weight: normal;
+}
+
+.experience .card-report-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #F27D00;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.experience .card-report-link:hover {
+    color: #e68a00;
+    text-decoration: underline;
+}
+
+/* =========================================
+   LES CERTIFICATIONS
+========================================= */
+.certifications .cards-body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.certifications .card {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    min-height: 190px;
+    margin: 0;
+    overflow: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    transition: all 0.25s ease;
+}
+
+.certifications .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.92) 0%,
+        rgba(0, 0, 0, 0.72) 25%,
+        rgba(0, 0, 0, 0.35) 50%,
+        rgba(0, 0, 0, 0.05) 80%
+    );
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+.certifications .card:hover {
+    background-size: 120%;
+}
+
+.certifications .card:hover::after {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.68) 25%,
+        rgba(0, 0, 0, 0.25) 50%,
+        rgba(0, 0, 0, 0) 80%
+    );
+}
+
+/* PIX */
+.certifications .card:first-child {
+    background-image: url('../Public/certifs/certification-pix-Hamlet-AVETISYAN.jpg');
+    background-position: top;
+}
+
+
+/* REACT */
+.certifications .card:nth-child(2) {
+    background-image: url('../Public/certifs/certificate-react-itgenio-Hamlet-AVETISYAN.png');
+    background-position: top;
+}
+
+
+/* ANSSI */
+.certifications .card:nth-child(3) {
+    background-image: url('../Public/certifs/Attestation-SecNumacadémie-Hamlet-AVETISYAN.jpg');
+    background-position: top;
+}
+
+
+/* HTML */
+.certifications .card:nth-child(4) {
+    background-image: url('../Public/certifs/certificate-html-sololearn-Hamlet-AVETISYAN.png');
+    background-position: top;
+}
+
+.certifications .card-link {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 190px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.certifications .card-link img {
+    position: absolute;
+    z-index: 4;
+    top: 12px;
+    right: 12px;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+}
+
+.certifications .card-link .card-content {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 18px 15px;
+    background: none;
+}
+
+.certifications .card-title,
+.certifications .card-date,
+.certifications .card-text {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.certifications .card-title {
+    margin-bottom: 2px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+}
+
+.certifications .card-date {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 1.2em;
+    color: #F27D00;
+}
+
+.certifications .card-text {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* =========================================
+   LES BOUTONS
+========================================= */
 .buttons {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     max-width: 400px;
-    margin-top: 10px;
-    animation-name: viewFromLeftToRight;
-    animation-duration: 1.5s;
+    margin-top: 30px;
     flex-wrap: wrap;
     gap: 20px;
+    animation-name: viewFromLeftToRight;
+    animation-duration: 1.5s;
 }
 
-/* Animations */
+/* =========================================
+   LES ANIMATIONS
+========================================= */
 @keyframes viewFromRightToLeft {
     from {
         opacity: 0;
         transform: translateX(10px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -224,46 +417,159 @@ body {
         opacity: 0;
         transform: translateX(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-/* Responsive */
-@media screen and (max-width: 1350px) {
-    .academic-pathways .timeline-point-bottom {
-        top: 190px;
-        bottom: 0;
+/* =========================================
+   LE RESPONSIVE
+========================================= */
+
+/* Pour les écrans de taille tablette et inférieure */
+@media screen and (max-width: 1050px) {
+    .main-container {
+        width: 92%;
+    }
+
+    .career-content {
+        grid-template-columns: 1fr;
+    }
+
+    .academic-pathways {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .certifications {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .online-courses {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .experience {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .card-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .academic-pathways .cards-body,
+    .online-courses .cards-body {
+        flex: initial;
+        justify-content: flex-start;
+    }
+
+    .academic-pathways .card,
+    .online-courses .card {
+        margin-bottom: 18px;
+    }
+
+    .academic-pathways .card:last-child,
+    .online-courses .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .certifications .card {
+        min-height: 210px;
+    }
+
+    .certifications .card-link {
+        height: 210px;
     }
 }
 
-@media screen and (max-width: 1050px) {
+/* Pour les écrans de taille mobile et inférieure */
+@media screen and (max-width: 650px) {
+    .main-header {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .main-container {
+        width: 94%;
+    }
+
     .career-content {
-        flex-direction: column;
-        align-items: center;
+        gap: 20px;
     }
-    .academic-pathways {
-        width: 300px;
+
+    .card-container {
+        padding: 20px 15px;
     }
-    .academic-pathways .timeline-point-bottom {
-        top: 220px;
-        bottom: 0;
+
+    .card-container h1 {
+        margin-bottom: 20px;
+        font-size: 1.35em;
     }
-    .online-courses {
-        width: 300px;
+
+    .academic-pathways .card,
+    .online-courses .card,
+    .experience .card {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
-    .online-courses .timeline-title {
-        font-size: 16px;
+
+    .academic-pathways .card-date,
+    .online-courses .card-date {
+        margin: 0;
+        text-align: left;
     }
-    .online-courses .timeline-point-bottom {
-        top: 90px;
-        bottom: 0;
+
+    .experience .card-header {
+        margin: 0;
     }
-    .online-courses .timeline-component-bg {
-        padding: 2.2em 1.5em 0em 0em;
+
+    .certifications .cards-body {
+        grid-template-columns: 1fr;
     }
-    .certifications {
-        width: 300px; 
+
+    .certifications .card {
+        min-height: 200px;
+    }
+
+    .certifications .card-link {
+        height: 200px;
+    }
+
+    .buttons {
+        width: 100%;
+        margin-top: 25px;
+        gap: 15px;
+    }
+}
+
+/* Pour les écrans de très petite taille */
+@media screen and (max-width: 400px) {
+    .card-container {
+        padding: 15px 12px;
+    }
+
+    .academic-pathways .card-content,
+    .online-courses .card-content,
+    .experience .card-content {
+        padding: 12px 14px;
+    }
+
+    .certifications .card {
+        min-height: 180px;
+    }
+
+    .certifications .card-link {
+        height: 180px;
+    }
+
+    .certifications .card-title {
+        font-size: 1.15em;
     }
 }
